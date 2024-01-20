@@ -1,0 +1,6 @@
+framework module Pods_PixelPerfectPlanner {
+  umbrella header "Pods-PixelPerfectPlanner-umbrella.h"
+
+  export *
+  module * { export * }
+}

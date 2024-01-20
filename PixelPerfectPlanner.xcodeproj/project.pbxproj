@@ -1,0 +1,834 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5509C2C892661679E7322A67 /* Pods_PixelPerfectPlanner_PixelPerfectPlannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDF0C08A636672E69DB6844 /* Pods_PixelPerfectPlanner_PixelPerfectPlannerUITests.framework */; };
+		B533B2552B5CB02F00E912CD /* pixelPerfectPlanner.db in Resources */ = {isa = PBXBuildFile; fileRef = B533B2542B5CB02F00E912CD /* pixelPerfectPlanner.db */; };
+		B533B2592B5DB7FD00E912CD /* dailyTaskDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533B2582B5DB7FD00E912CD /* dailyTaskDetail.swift */; };
+		B533B25B2B5DC74400E912CD /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533B25A2B5DC74400E912CD /* RadioButton.swift */; };
+		B541E7D42B685523004C7A09 /* mainStoryboard.png in Resources */ = {isa = PBXBuildFile; fileRef = B541E7D32B685523004C7A09 /* mainStoryboard.png */; };
+		B541E7D82B688F80004C7A09 /* taskDailyScene.png in Resources */ = {isa = PBXBuildFile; fileRef = B541E7D52B688F80004C7A09 /* taskDailyScene.png */; };
+		B541E7D92B688F80004C7A09 /* yearScene.png in Resources */ = {isa = PBXBuildFile; fileRef = B541E7D62B688F80004C7A09 /* yearScene.png */; };
+		B541E7DA2B688F80004C7A09 /* taskScene.png in Resources */ = {isa = PBXBuildFile; fileRef = B541E7D72B688F80004C7A09 /* taskScene.png */; };
+		B541E7DD2B688FA3004C7A09 /* dateScene.png in Resources */ = {isa = PBXBuildFile; fileRef = B541E7DB2B688FA3004C7A09 /* dateScene.png */; };
+		B541E7DE2B688FA3004C7A09 /* addScene.png in Resources */ = {isa = PBXBuildFile; fileRef = B541E7DC2B688FA3004C7A09 /* addScene.png */; };
+		B5A0BE152B5B58A00017A6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A0BE142B5B58A00017A6C9 /* AppDelegate.swift */; };
+		B5A0BE172B5B58A00017A6C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A0BE162B5B58A00017A6C9 /* SceneDelegate.swift */; };
+		B5A0BE1C2B5B58A00017A6C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A0BE1A2B5B58A00017A6C9 /* Main.storyboard */; };
+		B5A0BE1E2B5B58A10017A6C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A0BE1D2B5B58A10017A6C9 /* Assets.xcassets */; };
+		B5A0BE212B5B58A10017A6C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A0BE1F2B5B58A10017A6C9 /* LaunchScreen.storyboard */; };
+		B5A0BE2C2B5B58A10017A6C9 /* PixelPerfectPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A0BE2B2B5B58A10017A6C9 /* PixelPerfectPlannerTests.swift */; };
+		B5A0BE362B5B58A10017A6C9 /* PixelPerfectPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A0BE352B5B58A10017A6C9 /* PixelPerfectPlannerUITests.swift */; };
+		B5A0BE382B5B58A10017A6C9 /* PixelPerfectPlannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A0BE372B5B58A10017A6C9 /* PixelPerfectPlannerUITestsLaunchTests.swift */; };
+		B5A0BE452B5B5AD60017A6C9 /* DailyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A0BE442B5B5AD60017A6C9 /* DailyVC.swift */; };
+		B5A0BE492B5B61670017A6C9 /* AddTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A0BE482B5B61670017A6C9 /* AddTaskVC.swift */; };
+		B5A0BE4D2B5B619A0017A6C9 /* YearlyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A0BE4C2B5B619A0017A6C9 /* YearlyVC.swift */; };
+		B5B1785C2B65EA3D0097FCB0 /* dayOverviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B1785B2B65EA3D0097FCB0 /* dayOverviewVC.swift */; };
+		B5B178622B66BDC20097FCB0 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B178612B66BDC20097FCB0 /* extensions.swift */; };
+		B5B178662B66D37C0097FCB0 /* structDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B178652B66D37C0097FCB0 /* structDefinitions.swift */; };
+		B5B178682B66D98A0097FCB0 /* taskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B178672B66D98A0097FCB0 /* taskCell.swift */; };
+		ECA8FD04B292BC86EB98309D /* Pods_PixelPerfectPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419EDB5206FCB5249B93AF97 /* Pods_PixelPerfectPlanner.framework */; };
+		F4B5360FE35FA7162DBA01B9 /* Pods_PixelPerfectPlannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEE129F50C586DABC2708CA /* Pods_PixelPerfectPlannerTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5A0BE282B5B58A10017A6C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5A0BE092B5B58A00017A6C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5A0BE102B5B58A00017A6C9;
+			remoteInfo = PixelPerfectPlanner;
+		};
+		B5A0BE322B5B58A10017A6C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5A0BE092B5B58A00017A6C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5A0BE102B5B58A00017A6C9;
+			remoteInfo = PixelPerfectPlanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		419EDB5206FCB5249B93AF97 /* Pods_PixelPerfectPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PixelPerfectPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4786DBCA53B5DBC39677E3 /* Pods-PixelPerfectPlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelPerfectPlannerTests.debug.xcconfig"; path = "Target Support Files/Pods-PixelPerfectPlannerTests/Pods-PixelPerfectPlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F8F30399C3CC9EB929CFDBC /* Pods-PixelPerfectPlannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelPerfectPlannerTests.release.xcconfig"; path = "Target Support Files/Pods-PixelPerfectPlannerTests/Pods-PixelPerfectPlannerTests.release.xcconfig"; sourceTree = "<group>"; };
+		5FEE129F50C586DABC2708CA /* Pods_PixelPerfectPlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PixelPerfectPlannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62F51089C7832D3B61B55B37 /* Pods-PixelPerfectPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelPerfectPlanner.debug.xcconfig"; path = "Target Support Files/Pods-PixelPerfectPlanner/Pods-PixelPerfectPlanner.debug.xcconfig"; sourceTree = "<group>"; };
+		90852BBBF4E411C1829A960F /* Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests/Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B533B2542B5CB02F00E912CD /* pixelPerfectPlanner.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = pixelPerfectPlanner.db; sourceTree = "<group>"; };
+		B533B2582B5DB7FD00E912CD /* dailyTaskDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dailyTaskDetail.swift; sourceTree = "<group>"; };
+		B533B25A2B5DC74400E912CD /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		B541E7D32B685523004C7A09 /* mainStoryboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainStoryboard.png; sourceTree = "<group>"; };
+		B541E7D52B688F80004C7A09 /* taskDailyScene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taskDailyScene.png; sourceTree = "<group>"; };
+		B541E7D62B688F80004C7A09 /* yearScene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yearScene.png; sourceTree = "<group>"; };
+		B541E7D72B688F80004C7A09 /* taskScene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taskScene.png; sourceTree = "<group>"; };
+		B541E7DB2B688FA3004C7A09 /* dateScene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dateScene.png; sourceTree = "<group>"; };
+		B541E7DC2B688FA3004C7A09 /* addScene.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addScene.png; sourceTree = "<group>"; };
+		B5A0BE112B5B58A00017A6C9 /* PixelPerfectPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelPerfectPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A0BE142B5B58A00017A6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5A0BE162B5B58A00017A6C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B5A0BE1B2B5B58A00017A6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5A0BE1D2B5B58A10017A6C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5A0BE202B5B58A10017A6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5A0BE222B5B58A10017A6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A0BE272B5B58A10017A6C9 /* PixelPerfectPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelPerfectPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A0BE2B2B5B58A10017A6C9 /* PixelPerfectPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelPerfectPlannerTests.swift; sourceTree = "<group>"; };
+		B5A0BE312B5B58A10017A6C9 /* PixelPerfectPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelPerfectPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A0BE352B5B58A10017A6C9 /* PixelPerfectPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelPerfectPlannerUITests.swift; sourceTree = "<group>"; };
+		B5A0BE372B5B58A10017A6C9 /* PixelPerfectPlannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelPerfectPlannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B5A0BE442B5B5AD60017A6C9 /* DailyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyVC.swift; sourceTree = "<group>"; };
+		B5A0BE482B5B61670017A6C9 /* AddTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskVC.swift; sourceTree = "<group>"; };
+		B5A0BE4C2B5B619A0017A6C9 /* YearlyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlyVC.swift; sourceTree = "<group>"; };
+		B5B1785B2B65EA3D0097FCB0 /* dayOverviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dayOverviewVC.swift; sourceTree = "<group>"; };
+		B5B178612B66BDC20097FCB0 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		B5B178652B66D37C0097FCB0 /* structDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = structDefinitions.swift; sourceTree = "<group>"; };
+		B5B178672B66D98A0097FCB0 /* taskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskCell.swift; sourceTree = "<group>"; };
+		B5E56C422B67356F00CEE674 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		DDCB9B3A9E5793C67F6DC192 /* Pods-PixelPerfectPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelPerfectPlanner.release.xcconfig"; path = "Target Support Files/Pods-PixelPerfectPlanner/Pods-PixelPerfectPlanner.release.xcconfig"; sourceTree = "<group>"; };
+		FE6A821F8C45001D0B0752E2 /* Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests.release.xcconfig"; path = "Target Support Files/Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests/Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FEDF0C08A636672E69DB6844 /* Pods_PixelPerfectPlanner_PixelPerfectPlannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PixelPerfectPlanner_PixelPerfectPlannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5A0BE0E2B5B58A00017A6C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA8FD04B292BC86EB98309D /* Pods_PixelPerfectPlanner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A0BE242B5B58A10017A6C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B5360FE35FA7162DBA01B9 /* Pods_PixelPerfectPlannerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A0BE2E2B5B58A10017A6C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5509C2C892661679E7322A67 /* Pods_PixelPerfectPlanner_PixelPerfectPlannerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		599E6ADCA456B795452CAFB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62F51089C7832D3B61B55B37 /* Pods-PixelPerfectPlanner.debug.xcconfig */,
+				DDCB9B3A9E5793C67F6DC192 /* Pods-PixelPerfectPlanner.release.xcconfig */,
+				90852BBBF4E411C1829A960F /* Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests.debug.xcconfig */,
+				FE6A821F8C45001D0B0752E2 /* Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests.release.xcconfig */,
+				5C4786DBCA53B5DBC39677E3 /* Pods-PixelPerfectPlannerTests.debug.xcconfig */,
+				5F8F30399C3CC9EB929CFDBC /* Pods-PixelPerfectPlannerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B541E7D22B685455004C7A09 /* mdAssets */ = {
+			isa = PBXGroup;
+			children = (
+				B541E7DC2B688FA3004C7A09 /* addScene.png */,
+				B541E7DB2B688FA3004C7A09 /* dateScene.png */,
+				B541E7D52B688F80004C7A09 /* taskDailyScene.png */,
+				B541E7D72B688F80004C7A09 /* taskScene.png */,
+				B541E7D62B688F80004C7A09 /* yearScene.png */,
+				B541E7D32B685523004C7A09 /* mainStoryboard.png */,
+			);
+			path = mdAssets;
+			sourceTree = "<group>";
+		};
+		B5A0BE082B5B58A00017A6C9 = {
+			isa = PBXGroup;
+			children = (
+				B541E7D22B685455004C7A09 /* mdAssets */,
+				B5E56C422B67356F00CEE674 /* README.md */,
+				B5A0BE132B5B58A00017A6C9 /* PixelPerfectPlanner */,
+				B5A0BE2A2B5B58A10017A6C9 /* PixelPerfectPlannerTests */,
+				B5A0BE342B5B58A10017A6C9 /* PixelPerfectPlannerUITests */,
+				B5A0BE122B5B58A00017A6C9 /* Products */,
+				599E6ADCA456B795452CAFB5 /* Pods */,
+				C760824605C4A349F7AE6AD8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5A0BE122B5B58A00017A6C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5A0BE112B5B58A00017A6C9 /* PixelPerfectPlanner.app */,
+				B5A0BE272B5B58A10017A6C9 /* PixelPerfectPlannerTests.xctest */,
+				B5A0BE312B5B58A10017A6C9 /* PixelPerfectPlannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5A0BE132B5B58A00017A6C9 /* PixelPerfectPlanner */ = {
+			isa = PBXGroup;
+			children = (
+				B5A0BE142B5B58A00017A6C9 /* AppDelegate.swift */,
+				B5A0BE162B5B58A00017A6C9 /* SceneDelegate.swift */,
+				B5A0BE4C2B5B619A0017A6C9 /* YearlyVC.swift */,
+				B5B1785B2B65EA3D0097FCB0 /* dayOverviewVC.swift */,
+				B5A0BE442B5B5AD60017A6C9 /* DailyVC.swift */,
+				B5B178672B66D98A0097FCB0 /* taskCell.swift */,
+				B533B2582B5DB7FD00E912CD /* dailyTaskDetail.swift */,
+				B5A0BE482B5B61670017A6C9 /* AddTaskVC.swift */,
+				B5A0BE1A2B5B58A00017A6C9 /* Main.storyboard */,
+				B5A0BE1D2B5B58A10017A6C9 /* Assets.xcassets */,
+				B5A0BE1F2B5B58A10017A6C9 /* LaunchScreen.storyboard */,
+				B5A0BE222B5B58A10017A6C9 /* Info.plist */,
+				B533B2542B5CB02F00E912CD /* pixelPerfectPlanner.db */,
+				B5B178612B66BDC20097FCB0 /* extensions.swift */,
+				B533B25A2B5DC74400E912CD /* RadioButton.swift */,
+				B5B178652B66D37C0097FCB0 /* structDefinitions.swift */,
+			);
+			path = PixelPerfectPlanner;
+			sourceTree = "<group>";
+		};
+		B5A0BE2A2B5B58A10017A6C9 /* PixelPerfectPlannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5A0BE2B2B5B58A10017A6C9 /* PixelPerfectPlannerTests.swift */,
+			);
+			path = PixelPerfectPlannerTests;
+			sourceTree = "<group>";
+		};
+		B5A0BE342B5B58A10017A6C9 /* PixelPerfectPlannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5A0BE352B5B58A10017A6C9 /* PixelPerfectPlannerUITests.swift */,
+				B5A0BE372B5B58A10017A6C9 /* PixelPerfectPlannerUITestsLaunchTests.swift */,
+			);
+			path = PixelPerfectPlannerUITests;
+			sourceTree = "<group>";
+		};
+		C760824605C4A349F7AE6AD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				419EDB5206FCB5249B93AF97 /* Pods_PixelPerfectPlanner.framework */,
+				FEDF0C08A636672E69DB6844 /* Pods_PixelPerfectPlanner_PixelPerfectPlannerUITests.framework */,
+				5FEE129F50C586DABC2708CA /* Pods_PixelPerfectPlannerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5A0BE102B5B58A00017A6C9 /* PixelPerfectPlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A0BE3B2B5B58A10017A6C9 /* Build configuration list for PBXNativeTarget "PixelPerfectPlanner" */;
+			buildPhases = (
+				C836C80C9D7558B664B3402A /* [CP] Check Pods Manifest.lock */,
+				B5A0BE0D2B5B58A00017A6C9 /* Sources */,
+				B5A0BE0E2B5B58A00017A6C9 /* Frameworks */,
+				B5A0BE0F2B5B58A00017A6C9 /* Resources */,
+				D6098034F12A94AE5DAA6796 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixelPerfectPlanner;
+			productName = PixelPerfectPlanner;
+			productReference = B5A0BE112B5B58A00017A6C9 /* PixelPerfectPlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5A0BE262B5B58A10017A6C9 /* PixelPerfectPlannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A0BE3E2B5B58A10017A6C9 /* Build configuration list for PBXNativeTarget "PixelPerfectPlannerTests" */;
+			buildPhases = (
+				22EE85DDD3FA31F819618756 /* [CP] Check Pods Manifest.lock */,
+				B5A0BE232B5B58A10017A6C9 /* Sources */,
+				B5A0BE242B5B58A10017A6C9 /* Frameworks */,
+				B5A0BE252B5B58A10017A6C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5A0BE292B5B58A10017A6C9 /* PBXTargetDependency */,
+			);
+			name = PixelPerfectPlannerTests;
+			productName = PixelPerfectPlannerTests;
+			productReference = B5A0BE272B5B58A10017A6C9 /* PixelPerfectPlannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5A0BE302B5B58A10017A6C9 /* PixelPerfectPlannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A0BE412B5B58A10017A6C9 /* Build configuration list for PBXNativeTarget "PixelPerfectPlannerUITests" */;
+			buildPhases = (
+				62285160D8754CAC175D2393 /* [CP] Check Pods Manifest.lock */,
+				B5A0BE2D2B5B58A10017A6C9 /* Sources */,
+				B5A0BE2E2B5B58A10017A6C9 /* Frameworks */,
+				B5A0BE2F2B5B58A10017A6C9 /* Resources */,
+				BEFABB6F8A4879B449BEDF41 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5A0BE332B5B58A10017A6C9 /* PBXTargetDependency */,
+			);
+			name = PixelPerfectPlannerUITests;
+			productName = PixelPerfectPlannerUITests;
+			productReference = B5A0BE312B5B58A10017A6C9 /* PixelPerfectPlannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5A0BE092B5B58A00017A6C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					B5A0BE102B5B58A00017A6C9 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					B5A0BE262B5B58A10017A6C9 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = B5A0BE102B5B58A00017A6C9;
+					};
+					B5A0BE302B5B58A10017A6C9 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = B5A0BE102B5B58A00017A6C9;
+					};
+				};
+			};
+			buildConfigurationList = B5A0BE0C2B5B58A00017A6C9 /* Build configuration list for PBXProject "PixelPerfectPlanner" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5A0BE082B5B58A00017A6C9;
+			productRefGroup = B5A0BE122B5B58A00017A6C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5A0BE102B5B58A00017A6C9 /* PixelPerfectPlanner */,
+				B5A0BE262B5B58A10017A6C9 /* PixelPerfectPlannerTests */,
+				B5A0BE302B5B58A10017A6C9 /* PixelPerfectPlannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5A0BE0F2B5B58A00017A6C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B541E7D92B688F80004C7A09 /* yearScene.png in Resources */,
+				B541E7DA2B688F80004C7A09 /* taskScene.png in Resources */,
+				B5A0BE212B5B58A10017A6C9 /* LaunchScreen.storyboard in Resources */,
+				B541E7D82B688F80004C7A09 /* taskDailyScene.png in Resources */,
+				B533B2552B5CB02F00E912CD /* pixelPerfectPlanner.db in Resources */,
+				B5A0BE1E2B5B58A10017A6C9 /* Assets.xcassets in Resources */,
+				B541E7DE2B688FA3004C7A09 /* addScene.png in Resources */,
+				B5A0BE1C2B5B58A00017A6C9 /* Main.storyboard in Resources */,
+				B541E7DD2B688FA3004C7A09 /* dateScene.png in Resources */,
+				B541E7D42B685523004C7A09 /* mainStoryboard.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A0BE252B5B58A10017A6C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A0BE2F2B5B58A10017A6C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22EE85DDD3FA31F819618756 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PixelPerfectPlannerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62285160D8754CAC175D2393 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEFABB6F8A4879B449BEDF41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests/Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests/Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests/Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C836C80C9D7558B664B3402A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PixelPerfectPlanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6098034F12A94AE5DAA6796 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PixelPerfectPlanner/Pods-PixelPerfectPlanner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PixelPerfectPlanner/Pods-PixelPerfectPlanner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PixelPerfectPlanner/Pods-PixelPerfectPlanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5A0BE0D2B5B58A00017A6C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A0BE152B5B58A00017A6C9 /* AppDelegate.swift in Sources */,
+				B533B2592B5DB7FD00E912CD /* dailyTaskDetail.swift in Sources */,
+				B5B1785C2B65EA3D0097FCB0 /* dayOverviewVC.swift in Sources */,
+				B5A0BE172B5B58A00017A6C9 /* SceneDelegate.swift in Sources */,
+				B5A0BE4D2B5B619A0017A6C9 /* YearlyVC.swift in Sources */,
+				B5B178622B66BDC20097FCB0 /* extensions.swift in Sources */,
+				B5A0BE492B5B61670017A6C9 /* AddTaskVC.swift in Sources */,
+				B5B178662B66D37C0097FCB0 /* structDefinitions.swift in Sources */,
+				B5A0BE452B5B5AD60017A6C9 /* DailyVC.swift in Sources */,
+				B5B178682B66D98A0097FCB0 /* taskCell.swift in Sources */,
+				B533B25B2B5DC74400E912CD /* RadioButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A0BE232B5B58A10017A6C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A0BE2C2B5B58A10017A6C9 /* PixelPerfectPlannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A0BE2D2B5B58A10017A6C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A0BE382B5B58A10017A6C9 /* PixelPerfectPlannerUITestsLaunchTests.swift in Sources */,
+				B5A0BE362B5B58A10017A6C9 /* PixelPerfectPlannerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5A0BE292B5B58A10017A6C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5A0BE102B5B58A00017A6C9 /* PixelPerfectPlanner */;
+			targetProxy = B5A0BE282B5B58A10017A6C9 /* PBXContainerItemProxy */;
+		};
+		B5A0BE332B5B58A10017A6C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5A0BE102B5B58A00017A6C9 /* PixelPerfectPlanner */;
+			targetProxy = B5A0BE322B5B58A10017A6C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5A0BE1A2B5B58A00017A6C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5A0BE1B2B5B58A00017A6C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5A0BE1F2B5B58A10017A6C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5A0BE202B5B58A10017A6C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5A0BE392B5B58A10017A6C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5A0BE3A2B5B58A10017A6C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5A0BE3C2B5B58A10017A6C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62F51089C7832D3B61B55B37 /* Pods-PixelPerfectPlanner.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XA5Z3LR2M;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PixelPerfectPlanner/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = philipp.haug.PixelPerfectPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5A0BE3D2B5B58A10017A6C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDCB9B3A9E5793C67F6DC192 /* Pods-PixelPerfectPlanner.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XA5Z3LR2M;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PixelPerfectPlanner/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = philipp.haug.PixelPerfectPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B5A0BE3F2B5B58A10017A6C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C4786DBCA53B5DBC39677E3 /* Pods-PixelPerfectPlannerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = philipp.haug.PixelPerfectPlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PixelPerfectPlanner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PixelPerfectPlanner";
+			};
+			name = Debug;
+		};
+		B5A0BE402B5B58A10017A6C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F8F30399C3CC9EB929CFDBC /* Pods-PixelPerfectPlannerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = philipp.haug.PixelPerfectPlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PixelPerfectPlanner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PixelPerfectPlanner";
+			};
+			name = Release;
+		};
+		B5A0BE422B5B58A10017A6C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90852BBBF4E411C1829A960F /* Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = philipp.haug.PixelPerfectPlannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PixelPerfectPlanner;
+			};
+			name = Debug;
+		};
+		B5A0BE432B5B58A10017A6C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE6A821F8C45001D0B0752E2 /* Pods-PixelPerfectPlanner-PixelPerfectPlannerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = philipp.haug.PixelPerfectPlannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PixelPerfectPlanner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5A0BE0C2B5B58A00017A6C9 /* Build configuration list for PBXProject "PixelPerfectPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A0BE392B5B58A10017A6C9 /* Debug */,
+				B5A0BE3A2B5B58A10017A6C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A0BE3B2B5B58A10017A6C9 /* Build configuration list for PBXNativeTarget "PixelPerfectPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A0BE3C2B5B58A10017A6C9 /* Debug */,
+				B5A0BE3D2B5B58A10017A6C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A0BE3E2B5B58A10017A6C9 /* Build configuration list for PBXNativeTarget "PixelPerfectPlannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A0BE3F2B5B58A10017A6C9 /* Debug */,
+				B5A0BE402B5B58A10017A6C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A0BE412B5B58A10017A6C9 /* Build configuration list for PBXNativeTarget "PixelPerfectPlannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A0BE422B5B58A10017A6C9 /* Debug */,
+				B5A0BE432B5B58A10017A6C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5A0BE092B5B58A00017A6C9 /* Project object */;
+}
